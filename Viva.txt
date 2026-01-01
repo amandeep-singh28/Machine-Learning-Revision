@@ -64,11 +64,11 @@ It penalise the R2 Score when we add unnecessary columns.
 Adjusted R2 = 1 - [(1 - R2) * ((n-1) / (n - p - 1))]
 where n = number of observations and p = number of features
 
-->Mean Absolute Error(MAE)
+->Mean absolute error(MAE)
 It measure how far your model's predictions are from the actual values on average.
 MAE = E(|yi - yi^|) / n
 For example:-Imagine we are predicting the marks of the student. It MAE = 3, it means that our prediction is off by 3 marks from the actual marks
-It is less sensitive.
+It is less sensitive to outliers.
 
 ->Mean squared error(MSE)
 It just do the square of the residual error.
