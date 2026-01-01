@@ -80,4 +80,7 @@ It is also like simple linear regression, but in this the best fit line is forme
           model = LinearRegression()
           model.fit(X_poly, y)
 
-    
+->Logistic Regression
+It is similar to Linear Regression but it works upon Sigmoid function. Unlike Linear regression model which predicts continous value but in case of logistic regression we work upon probabilites. The idea is to compute the probability whether a particular value is going to lie on class 0 class 1.
+p = 1 / 1 + e^-y
+
