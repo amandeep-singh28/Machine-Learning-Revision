@@ -4,7 +4,7 @@ It is a type of learning which is performed on labelled data which means that ea
 For example:- Email Spam or Ham, House price prediction, etc.
 
 ->Unsupervised Learning
-It is a type of learning which is performed on unlabelled data which means that there is only 1 input feature and model tries to learn patterns in it.
+It is a type of learning which is performed on unlabelled data which means that there is no target variable and model tries to learn patterns in it.
 For example:- Customer Segmentation.
 
 ->Semi-Supervised Learning
@@ -12,7 +12,7 @@ Small amount of labelled data and large amount of unlabelled data.
 For example:- Image classification where only few images are labelled.
 
 ->Reinforced Learning
-Models learns the data through reward and punishment. Model learns by trial and error, gets reward  for correct action and peanlty for wrong action.
+The model learns through trial and error using rewards and penalties. It receives a reward for correct actions and a penalty for wrong actions.
 For example-> Game pkayingh like Chess. 
 
 ->How to create a Dataframe?
@@ -85,10 +85,10 @@ It is the square root of MSE.
 ->Confusion Matrix
 It is a table which is used to evaluatethe performance of a classification model.
 It shows how well the predicted class matches with the actual class.
-TN(True Negative) -> 0(Predicted), 0(Actual)
-FP(False Positive) -> 0(Predicted), 1(Actual)
 TP(True Positive) -> 1(Predicted), 1(Actual)
-FN(False Negative) -> 1(Predicted), 0(Actual)
+FP(False Positive) -> 1(Predicted), 0(Actual)
+FN(False Negative) -> 0(Predicted), 1(Actual)
+TN(True Negative) -> 0(Predicted), 0(Actual)
     (i)Steps
        from sklearn.metrics confusion_matrix, ConfusionMatrixDisplay
        cm = confusion_matrix(y_test, y_pred)
@@ -122,7 +122,7 @@ y = b1x + b0
 
 ->Multiple Linear Regression(Supervised Learning)
 It is used to predict 1 continos value on the basis of two or more independent variables.
-y = b3x + b2x + b1x + b0
+y = b3x3 + b2x2 + b1x1 + b0
     (i)Problem -> How we decide feature selection in Multiple Linear Regression
        Using P-value concept, if p_value < 0.05 feature is significant and if > 0.05 not significant.
 
