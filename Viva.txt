@@ -70,7 +70,10 @@ MAE = E(|yi - yi^|) / n
 For example:-Imagine we are predicting the marks of the student. It MAE = 3, it means that our prediction is off by 3 marks from the actual marks
 It is less sensitive.
 
-
+->Mean squared error(MSE)
+It just do the square of the residual error.
+MSE = E((yi - yi^)^2) / n
+It is more sensitive to outliers.
 
 
 (ii)Types of Models which i have studied so far
