@@ -168,3 +168,16 @@ It is a distance based learning algorithm in which Normalization is required. It
        - Lazy Learner.
        - Normalization is required as it is a distance based model.
 
+->Naive Bayes Algorithm (Supervised Classification Algorithm)
+It is an algorithm which works on the concept of Bayes theorem that predicts a class by calculating probabilities and assuming that independent features are conditionally independent.
+    (i)Bayes theorem
+       It describes how to update the probability of an event based on new evidence. It calculates the conditional probability of an event given prior knowledge.
+       P(B|A) = P(B) * P(A|B) / P(A)
+       Posterior Probability = Prior Probability * Likelihood / Evidence
+    (ii)If the dataset is categorical, we will make use of MultinomialNB
+       from sklearn.naive_bayes import MultinomialNB
+       from sklearn.feature_extraction.text import CountVectorizer {Words -> Number}
+       cv = CountVectorizer()
+       X_train_cv = cv.fit_transform(X_train)
+       X_test_cv = cv.transform(X_test)
+    (iii)If the dataset is numerical, we will make use of GaussianNB
