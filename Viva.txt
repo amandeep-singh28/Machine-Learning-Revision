@@ -1,0 +1,49 @@
+(i) Basic things
+
+->How to create a Dataframe?
+pd.DataFrame({
+    'Col1_name' : [val1, val2, val3],
+    'Col2_name' : [val1, val2, val3]
+})
+
+->For X(Independent Variable -> Predictors) and y(Dependent Variable -> Target Variable)
+X -> 2D array
+y -> 1D array
+
+->Label Encoding
+It converts categorical values into numerical values. Each unique category gets a unique number.
+
+->Dummy Encoding(One Hot Encoding)
+It converts categorical values into binary columns. Each unique value behaves as a new column.
+
+->Discretization
+Converting numerical values into categorical values is known as Discretization.
+
+->Feature Scaling
+It is used to scaled our values so that one value should not dominate over another value. There are two types of techniques:-
+    (i)Normalization(Min-Max Scaling)
+        * It is used when our data is not normally distributed.
+        * There is a boundation in the output([0,1]).
+        * It is used in distance based models.
+        * X - Xmin / Xmax - Xmin
+    (ii)Standardization(Z-Score)
+        * It used when our data is normally distributed.
+        * There is no boundation in the output([Min, Max]).
+        * It is used in linear models.
+        * X - u / sigma
+
+->Supervised Learning
+It is a type of learning which is performed on labelled data which means that each input has its known correct output.
+For example:- Email Spam or Ham, House price prediction, etc.
+
+->Unsupervised Learning
+It is a type of learning which is performed on unlabelled data which means that there is only 1 input feature and model tries to learn patterns in it.
+For example:- Customer Segmentation.
+
+->Semi-Supervised Learning
+Small amount of labelled data and large amount of unlabelled data.
+For example:- Image classification where only few images are labelled.
+
+->Reinforced Learning
+Models learns the data through reward and punishment. Model learns by trial and error, gets reward  for correct action and peanlty for wrong action.
+For example-> Game pkayingh like Chess, 
