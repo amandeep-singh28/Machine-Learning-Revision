@@ -208,4 +208,27 @@ With the use of kernel trick, SVM can also handle non-linear data.
        (e)Exponential Kernel(Laplacian Kernel)
           * Distance based kernel.
           * It is more robust when our dataset contains outliers.
-    
+
+->Decision Tree (Supervised Learning)
+It is a flow chart like structure used for decision making in machine learning.
+There are two types of techniques in decision tree:-
+    (i)ID3 (Iterative Dichotomiser 3)
+       * It is used for classification only.
+       * Output -> Decision Tree.
+    (ii)CART (Classification & Regression Tree)
+       * It is used for classification and regression.
+       * Outpur -> Strictly Binary Tree.
+    (iii)Working
+       * Start with all data at the root node.
+       * Pick one feature to split the data so that the resulting child nodes are as pure as possible.
+       * For impure node, repeat the process (Select the best feature again and split again).
+       * Continue splitting until all nodes are pure.
+    (iv)Gini Index and Entropy
+       Gini Index and Entropy are measures used in decision trees to check how pure or impure a node is. Both measure class uncertainty, but they differ in their mathematical formulation. Gini Index ranges from 0 to 0.5 (for binary classification), while Entropy ranges from 0 to 1.
+    (v)Information Gain
+       It selects the best feature by measuring how much entropy is reduced after splitting the data on that feature.
+    (vi)Pruning
+       It means removing the unnecessary branches from tree. There are two methods:-
+       * Post Pruning:- After the tree grows fully, we cut the branches using max_depth parameter.
+       * Pre Pruning:- Stop growing tree at the early stage using hyperparameter tuning.
+    (vii)Overfitting is the disadvantage in decision tree.
