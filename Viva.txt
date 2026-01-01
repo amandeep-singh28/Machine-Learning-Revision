@@ -232,3 +232,15 @@ There are two types of techniques in decision tree:-
        * Post Pruning:- After the tree grows fully, we cut the branches using max_depth parameter.
        * Pre Pruning:- Stop growing tree at the early stage using hyperparameter tuning.
     (vii)Overfitting is the disadvantage in decision tree.
+
+->K-Means Clustering (Unsupervised Learning)
+It is an Unsupervised learning algorithm.
+    (i)Working
+       * Choose the number of clusters.
+       * Randomly place centroids.
+       * Assign each point to the nearest centroid based on euclidean distance.
+       * Recompute centroids, repeat this until we got a perfect centroid which covers more data point.
+    (ii)Disadvantage -> Initial assignment of the centroid.
+    (iii)Solution -> init = kmeans++. It means that only the first centroid is placed randomly and the second centroid is placed in such a way that it covers more data point.
+        Elbow Method -> It helps us to choose the optimal number of clusters.
+        
