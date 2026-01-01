@@ -1,4 +1,19 @@
 (i) Basic things
+->Supervised Learning
+It is a type of learning which is performed on labelled data which means that each input has its known correct output.
+For example:- Email Spam or Ham, House price prediction, etc.
+
+->Unsupervised Learning
+It is a type of learning which is performed on unlabelled data which means that there is only 1 input feature and model tries to learn patterns in it.
+For example:- Customer Segmentation.
+
+->Semi-Supervised Learning
+Small amount of labelled data and large amount of unlabelled data.
+For example:- Image classification where only few images are labelled.
+
+->Reinforced Learning
+Models learns the data through reward and punishment. Model learns by trial and error, gets reward  for correct action and peanlty for wrong action.
+For example-> Game pkayingh like Chess. 
 
 ->How to create a Dataframe?
 pd.DataFrame({
@@ -32,18 +47,3 @@ It is used to scaled our values so that one value should not dominate over anoth
         * It is used in linear models.
         * X - u / sigma
 
-->Supervised Learning
-It is a type of learning which is performed on labelled data which means that each input has its known correct output.
-For example:- Email Spam or Ham, House price prediction, etc.
-
-->Unsupervised Learning
-It is a type of learning which is performed on unlabelled data which means that there is only 1 input feature and model tries to learn patterns in it.
-For example:- Customer Segmentation.
-
-->Semi-Supervised Learning
-Small amount of labelled data and large amount of unlabelled data.
-For example:- Image classification where only few images are labelled.
-
-->Reinforced Learning
-Models learns the data through reward and punishment. Model learns by trial and error, gets reward  for correct action and peanlty for wrong action.
-For example-> Game pkayingh like Chess, 
