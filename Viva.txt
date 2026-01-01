@@ -15,6 +15,16 @@ For example:- Image classification where only few images are labelled.
 The model learns through trial and error using rewards and penalties. It receives a reward for correct actions and a penalty for wrong actions.
 For example-> Game pkayingh like Chess. 
 
+->How to import inbuilt datasets?
+    (i)Using Seaborn library
+       import seaborn as sns 
+       data = sns.load_dataset('iris')
+    (ii)Using scikit-learn library
+       from sklearn.datasets import load_iris
+       data = load_iris()
+       df = pd.DataFrame(data.data, data.feature_names)
+       df['target'] = data.target
+
 ->How to create a Dataframe?
 pd.DataFrame({
     'Col1_name' : [val1, val2, val3],
