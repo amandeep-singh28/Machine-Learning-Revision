@@ -50,9 +50,16 @@ It is used to scaled our values so that one value should not dominate over anoth
 (ii)Types of Models which i have studied so far
 
 ->Linear Regression
-In this, we predict 1 continous(dependent) value on the basis of 1 independent variable.
+In this, we predict 1 continous(dependent) value on the basis of 1 independent variables.
 y = b1x + b0
     (i)Working
        It works on the concept of OLS(Ordinary Least Square). It means that it finds the regression line by minimizing the sum of squared errors betweem the actual and predicted data points(Residual Error -> E(yi - y^)^2).
        b1 = E(xi - x^) (yi - y^) / E((xi - x^) ^ 2) (Slope Formula)
-       
+
+->Multiple Linear Regression
+It is used to predict 1 continos value on the basis of two or more independent variables.
+y = b3x + b2x + b1x + b0
+    (i)Problem -> How we decide feature selection in Multiple Linear Regression
+       Using P-value concept, if p_value < 0.05 feature is significant and if > 0.05 not significant.
+
+  
