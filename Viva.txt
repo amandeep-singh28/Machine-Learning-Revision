@@ -94,7 +94,11 @@ FN(False Negative) -> 1(Predicted), 0(Actual)
        cm = confusion_matrix(y_test, y_pred)
        display = ConfusionMatrixDisplay(confusion_matrix = cm).plot()
        print(display)
-       
+
+->Accuracy Score
+How many correctly predicted values are there over total number of values.
+Accuracy = TP + TN / TP + TN + FP + FN
+
 
 (iv)Types of Models which i have studied so far
 
