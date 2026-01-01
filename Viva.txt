@@ -62,4 +62,22 @@ y = b3x + b2x + b1x + b0
     (i)Problem -> How we decide feature selection in Multiple Linear Regression
        Using P-value concept, if p_value < 0.05 feature is significant and if > 0.05 not significant.
 
-  
+->Polynomial Regression
+It is also like simple linear regression, but in this the best fit line is formed like a curve which captures more data points as compared to simple linear regression. It is for non-linear data.
+    (i)Why we use PolynomialFeatures?
+        We use PolynomialFeatures to transform the original features into higher-degree features so that a linear regression model can capture non-linear relationships in the data. Without it, the model behaves like a simple linear regression model.
+    (ii)Steps
+        from sklearn.linear_model import LinearRegression
+        from sklearn.preprocessing import PolynomialFeatures
+        ->Independent Varible = 2D
+          for example:- X = np.array([[1, 2, 3, 4, 5, 6]])
+          This will not work in case of Polynomial Regression. We need to transpose it than it will work correctly
+          X = np.array([[1, 2, 3, 4, 5, 6]]).T
+        ->Secondly we need to create higher degrees for the X column.
+          poly = PolynomialFeatures(degree = n)
+          X_poly = poly.fit_transform(X)
+        ->Thirdly traning patterns
+          model = LinearRegression()
+          model.fit(X_poly, y)
+
+    
