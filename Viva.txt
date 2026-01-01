@@ -49,7 +49,7 @@ It is used to scaled our values so that one value should not dominate over anoth
 
 (ii)Evaluation metrics for Regression Models
 
-->R2 square
+->R2 squared
 It tells how much variance in the target variable is explained by the independent variables.
 R2 = 1 - Sum of Square of Residual / Sum of Square of Total -> Sum((yi - yi^) ^ 2) / Sum((yi - yavg) ^ 2)
 For example: X = Study Hours, y = Student Marks
@@ -63,6 +63,13 @@ For example: X = Study Hours, y = Student Marks
 It penalise the R2 Score when we add unnecessary columns.
 Adjusted R2 = 1 - [(1 - R2) * ((n-1) / (n - p - 1))]
 where n = number of observations and p = number of features
+
+->Mean Absolute Error(MAE)
+It measure how far your model's predictions are from the actual values on average.
+MAE = E(|yi - yi^|) / n
+For example:-Imagine we are predicting the marks of the student. It MAE = 3, it means that our prediction is off by 3 marks from the actual marks
+It is less sensitive.
+
 
 
 
