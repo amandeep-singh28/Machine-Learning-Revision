@@ -181,3 +181,31 @@ It is an algorithm which works on the concept of Bayes theorem that predicts a c
        X_train_cv = cv.fit_transform(X_train)
        X_test_cv = cv.transform(X_test)
     (iii)If the dataset is numerical, we will make use of GaussianNB
+
+->Support Vector Machine (SVM) (Supervised Learning)
+It is a supervised learning algorithm which makes use of hyperplane as a decision boundary to separate classes. It separates data by finding the best hyperplane with maximum margin. It works well in high-dimensional spaces.
+With the use of kernel trick, SVM can also handle non-linear data.
+    (i)Support Vector
+       The nearest point through which the marginal plane has passed, that point is known as Support Vector.
+    (ii)Hard Marginal Plane
+       In which there are no incorrect points between the marginal plane.
+    (iii)Soft Marginal Plane
+       In which there are incorrect points between the marginal plane.
+    (iv)Types Of Kernels:-
+       (a)Linear Kernel
+          * It does simple dot product.
+          * Fastest Kernel.
+          * Cannnot capture Non-Linear Data.
+       (b)Polynomial Kernel
+          * High dimensional space.
+          * It handles non-linearity in data.
+          * Can become computational expensive at higher degree.
+       (c)RBF(Radial Basis Function) -> Gaussian Kernel
+          * It can handle more complex and non-linear boundaries.
+       (d)Sigmoid Kernel
+          * It behaves like a neural network because its formula is similar to tanh activation function which is used in Neural Networks.
+          * Adds non-linearity in data.
+       (e)Exponential Kernel(Laplacian Kernel)
+          * Distance based kernel.
+          * It is more robust when our dataset contains outliers.
+    
