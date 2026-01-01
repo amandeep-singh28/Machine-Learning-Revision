@@ -75,6 +75,13 @@ It just do the square of the residual error.
 MSE = E((yi - yi^)^2) / n
 It is more sensitive to outliers.
 
+->Root mean squared error(RMSE)
+It is the square root of MSE.
+    (i)Why it is better than MAE and MSE?
+       Because in MSE the output comes in squared units like marks^2, dollars^2. But in RMSE it penalizes the larger errors + it returns back to the original unit form which is more easy to interpret.
+
+
+
 
 (ii)Types of Models which i have studied so far
 
