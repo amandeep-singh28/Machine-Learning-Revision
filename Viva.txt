@@ -47,6 +47,19 @@ It is used to scaled our values so that one value should not dominate over anoth
         * It is used in linear models.
         * X - u / sigma
 
+(ii)Evaluation metrics for Regression Models
+
+->R2 squared
+It tells how much variance in the target variable is explained by the independent variables.
+R2 = 1 - Sum of Square of Residual / Sum of Square of Total -> Sum((yi - yi^) ^ 2) / Sum((yi - yavg) ^ 2)
+For example: X = Study Hours, y = Student Marks
+             R2_Score = 70%
+             It means that 70% of the marks difference are due to study hours. Remaining 30% are due to some other factors.
+            
+            (i)Problem
+               If we keep on adding the columns which have no relationships with other columns than R2 score will increase. Due to this factor Adjusted R2 squared error is their.
+
+
 (ii)Types of Models which i have studied so far
 
 ->Linear Regression(Supervised Learning)
