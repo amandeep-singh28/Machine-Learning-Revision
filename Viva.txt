@@ -80,10 +80,23 @@ It is the square root of MSE.
     (i)Why it is better than MAE and MSE?
        Because in MSE the output comes in squared units like marks^2, dollars^2. But in RMSE it penalizes the larger errors + it returns back to the original unit form which is more easy to interpret.
 
+(iii)Evaluation metrics for Classification Models
 
+->Confusion Matrix
+It is a table which is used to evaluatethe performance of a classification model.
+It shows how well the predicted class matches with the actual class.
+TN(True Negative) -> 0(Predicted), 0(Actual)
+FP(False Positive) -> 0(Predicted), 1(Actual)
+TP(True Positive) -> 1(Predicted), 1(Actual)
+FN(False Negative) -> 1(Predicted), 0(Actual)
+    (i)Steps
+       from sklearn.metrics confusion_matrix, ConfusionMatrixDisplay
+       cm = confusion_matrix(y_test, y_pred)
+       display = ConfusionMatrixDisplay(confusion_matrix = cm).plot()
+       print(display)
+       
 
-
-(ii)Types of Models which i have studied so far
+(iv)Types of Models which i have studied so far
 
 ->Linear Regression(Supervised Learning)
 In this, we predict 1 continous(dependent) value on the basis of 1 independent variables.
