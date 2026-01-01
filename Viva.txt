@@ -103,6 +103,10 @@ Accuracy = TP + TN / TP + TN + FP + FN
 How many predicted positives were actually True Positive(TP).
 Precision = TP / TP + FP
 
+->Recall Score
+How good we are finding the True Positive values.
+Recall = TP / TP + FN
+
 
 
 (iv)Types of Models which i have studied so far
