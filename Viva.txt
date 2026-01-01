@@ -158,3 +158,13 @@ It is also like simple linear regression, but in this the best fit line is forme
 It is similar to Linear Regression but it works upon Sigmoid function. Unlike Linear regression model which predicts continous value but in case of logistic regression we work upon probabilites. The idea is to compute the probability whether a particular value is going to lie on class 0 class 1.
 p = 1 / 1 + e^-y
 
+->K-Nearest Neighbours(KNN) (Supervised Learning)
+It is a distance based learning algorithm in which Normalization is required. It is a lazy learner which means that it do not learn anything in the training phase instead it learns at the time of prediction. It works on majority voting.
+    (i)Advantages
+       - It handles multi class problem efficiently.
+       - It works well with non-linear data and complex decision boundaries.
+    (ii)Disadvantages
+       - More computational expensive because there is no training phase.
+       - Lazy Learner.
+       - Normalization is required as it is a distance based model.
+
