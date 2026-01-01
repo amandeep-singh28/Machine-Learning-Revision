@@ -140,7 +140,7 @@ It is also like simple linear regression, but in this the best fit line is forme
         ->Secondly we need to create higher degrees for the X column.
           poly = PolynomialFeatures(degree = n)
           X_poly = poly.fit_transform(X)
-        ->Thirdly traning patterns
+        ->Thirdly training
           model = LinearRegression()
           model.fit(X_poly, y)
 
