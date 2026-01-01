@@ -107,7 +107,9 @@ Precision = TP / TP + FP
 How good we are finding the True Positive values.
 Recall = TP / TP + FN
 
-
+->F1 Score
+It tells how strong our model is. It is the harmonic mean of Precision and Recall. It balances both precision and recall and is especially useful when the dataset is imbalanced.
+F1 Score = 2 * [(Precision * Recall)/ (Precision + Recall)]
 
 (iv)Types of Models which i have studied so far
 
