@@ -99,6 +99,11 @@ FN(False Negative) -> 1(Predicted), 0(Actual)
 How many correctly predicted values are there over total number of values.
 Accuracy = TP + TN / TP + TN + FP + FN
 
+->Precision Score
+How many predicted positives were actually True Positive(TP).
+Precision = TP / TP + FP
+
+
 
 (iv)Types of Models which i have studied so far
 
