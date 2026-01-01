@@ -49,7 +49,7 @@ It is used to scaled our values so that one value should not dominate over anoth
 
 (ii)Evaluation metrics for Regression Models
 
-->R2 squared
+->R2 square
 It tells how much variance in the target variable is explained by the independent variables.
 R2 = 1 - Sum of Square of Residual / Sum of Square of Total -> Sum((yi - yi^) ^ 2) / Sum((yi - yavg) ^ 2)
 For example: X = Study Hours, y = Student Marks
@@ -58,6 +58,12 @@ For example: X = Study Hours, y = Student Marks
             
             (i)Problem
                If we keep on adding the columns which have no relationships with other columns than R2 score will increase. Due to this factor Adjusted R2 squared error is their.
+
+->Adjusted R2 squared
+It penalise the R2 Score when we add unnecessary columns.
+Adjusted R2 = 1 - [(1 - R2) * ((n-1) / (n - p - 1))]
+where n = number of observations and p = number of features
+
 
 
 (ii)Types of Models which i have studied so far
