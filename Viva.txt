@@ -13,7 +13,7 @@ For example:- Image classification where only few images are labelled.
 
 ->Reinforced Learning
 The model learns through trial and error using rewards and penalties. It receives a reward for correct actions and a penalty for wrong actions.
-For example-> Game pkayingh like Chess. 
+For example-> Game playing like Chess. 
 
 ->How to import inbuilt datasets?
     (i)Using Seaborn library
