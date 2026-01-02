@@ -93,7 +93,7 @@ It is the square root of MSE.
 (iii)Evaluation metrics for Classification Models
 
 ->Confusion Matrix
-It is a table which is used to evaluatethe performance of a classification model.
+It is a table which is used to evaluate the performance of a classification model.
 It shows how well the predicted class matches with the actual class.
 TP(True Positive) -> 1(Predicted), 1(Actual)
 FP(False Positive) -> 1(Predicted), 0(Actual)
@@ -224,7 +224,7 @@ There are two types of techniques in decision tree:-
        * For impure node, repeat the process (Select the best feature again and split again).
        * Continue splitting until all nodes are pure.
     (iv)Gini Index and Entropy
-       Gini Index and Entropy are measures used in decision trees to check how pure or impure a node is. Both measure class uncertainty, but they differ in their mathematical formulation. Gini Index ranges from 0 to 0.5 (for binary classification), while Entropy ranges from 0 to 1.
+       Gini Index and Entropy are measures used in decision trees to check how pure or impure a node is. Both measure class uncertainty, but they differ in their mathematical formulation. Gini Index ranges from 0 to 0.5, while Entropy ranges from 0 to 1.
     (v)Information Gain
        It selects the best feature by measuring how much entropy is reduced after splitting the data on that feature.
     (vi)Pruning
