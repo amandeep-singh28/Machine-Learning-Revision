@@ -176,7 +176,7 @@ It is an algorithm which works on the concept of Bayes theorem that predicts a c
        Posterior Probability = Prior Probability * Likelihood / Evidence
     (ii)If the dataset is categorical, we will make use of MultinomialNB
        from sklearn.naive_bayes import MultinomialNB
-       from sklearn.feature_extraction.text import CountVectorizer {Words -> Number}
+       from sklearn.feature_extraction.text import CountVectorizer {Words -> Number -> By counting how many times each word appears}
        cv = CountVectorizer()
        X_train_cv = cv.fit_transform(X_train)
        X_test_cv = cv.transform(X_test)
