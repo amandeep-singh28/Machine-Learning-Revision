@@ -247,6 +247,7 @@ It is an Unsupervised learning algorithm.
 ->Dimensionality Reduction
 It means removing unnecessary features from our dataset because irrelevant features can slow down our training speed. It reduces overfitting also.
 We can do this with the help of Principal Component Analysis(PCA)
+    * Normalization is required in PCA.
     * It converts original features into new features like PC1, PC2. It tells us that how much information a feature is giving to us like 20%, 60%.
     * Explained Variance Ratio:- It tells us how much information each principal componenet captures.
     (i)Implementation
