@@ -256,4 +256,24 @@ We can do this with the help of Principal Component Analysis(PCA)
        X_train_pca = pca.fit_transform(X_train)
        X_test_pca = pca.fit_transform(X_test)
 
+->Neural Networks in Machine Learning
+Neural network are inspired by how neurons works in our human brain. Thry try to mimic the human brain. There are 4 components in neural network:-
+     * Layers(Input, Hidden and Output Layer)
+     * Connections
+     * Neurons
+     * Activation function
+There are three types of Neural Networks:-
+     * ANN(Artificial Neural Networks) -> Works on structured data
+     * CNN(Convolutional Neural Networks) -> Works on Images and Videos
+       -> Pooling (It reduce the dimension of the images)
+       -> Input data -> Convolutional -> Activation Function -> Pooling -> Output
+     * RNN(Recurrent Neural Networks) -> Works on Text and Time-based data
+Code for ANN:-
+     from sklearn.neural_network import MLPClassifier
+     ann = MLPClassifier(
+         hidden_layer_sizes = (5,), # 1 hidden layer with 5 neurons, (5, 10) -> 2 hidden layer with 5 & 10 neurons, It takes value in tuple length
+         activation = 'relu',
+         max_iter = 3000, # It will iterate 3000 times in a loop
+         random_state = 42
+      )
 
