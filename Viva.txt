@@ -256,7 +256,7 @@ We can do this with the help of Principal Component Analysis(PCA)
        X_train_pca = pca.fit_transform(X_train)
        X_test_pca = pca.fit_transform(X_test)
 
-->Neural Networks in Machine Learning
+->Neural Networks in Machine Learning (Supervised Learning + Normalization is required)
 Neural network are inspired by how neurons works in our human brain. Thry try to mimic the human brain. There are 4 components in neural network:-
      * Layers(Input, Hidden and Output Layer)
      * Connections
